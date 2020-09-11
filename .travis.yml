@@ -37,6 +37,7 @@ matrix:
     - arch: ppc64le
       compiler: gcc
       env: MODE=build-gcc ENABLE_UCS4=--enable-ucs4
+      before_script: travis_export_go 1.13.x $HOME/liblouis/liblouis;travis_setup_go
     - arch: ppc64le
       compiler: gcc
       env: MODE=build-js

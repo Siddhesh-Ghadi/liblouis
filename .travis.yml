@@ -31,11 +31,14 @@ matrix:
       env: MODE=build-js
     - env: MODE=check-format
     # power jobs
-    - compiler: gcc
+    - arch: ppc64le
+      compiler: gcc
       env: MODE=build-gcc
-    - compiler: gcc
+    - arch: ppc64le
+      compiler: gcc
       env: MODE=build-gcc ENABLE_UCS4=--enable-ucs4
-    - compiler: gcc
+    - arch: ppc64le
+      compiler: gcc
       env: MODE=build-js
 
 before_install:

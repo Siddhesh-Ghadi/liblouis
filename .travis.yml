@@ -30,6 +30,13 @@ matrix:
     - compiler: gcc
       env: MODE=build-js
     - env: MODE=check-format
+    # power jobs
+    - compiler: gcc
+      env: MODE=build-gcc
+    - compiler: gcc
+      env: MODE=build-gcc ENABLE_UCS4=--enable-ucs4
+    - compiler: gcc
+      env: MODE=build-js
 
 before_install:
   - sudo apt-get update -qq
